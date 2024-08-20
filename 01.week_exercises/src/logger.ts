@@ -1,5 +1,6 @@
+import { port } from './config'
 
-export const logServerMessage = (message: string) => {
+export const logServerMessage = (message: string | undefined) => {
     const timeStamp = Date.now();
-    return timeStamp + message;
+    return timeStamp + `server is running on http://localhost${port}`;
 }
