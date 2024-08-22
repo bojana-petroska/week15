@@ -54,6 +54,7 @@ console.log(includeGrade)
     }
   });
   res.json(result);
+  res.set('X-Student-Found', 'true');
 
   // const student = students.find((student) => student.id === id);
 
